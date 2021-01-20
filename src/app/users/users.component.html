@@ -1,0 +1,16 @@
+<!-- <h4>{{accessAs.name}}</h4> -->
+<h4>data transfer</h4>
+<button (click)='senddata()'>send data to parent ng-component</button>
+<h1>show data from api in angular</h1>
+<table border="1">
+  <tr>
+    <td>ID</td>
+    <td>titel</td>
+    <td>completed</td>
+  </tr>
+  <tr *ngFor="let item of APIdata">
+    <td>{{item.id}}</td>
+    <td>{{item.title}}</td>
+    <td>{{item.completed}}</td>
+  </tr>
+</table>

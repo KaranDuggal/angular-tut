@@ -1,0 +1,101 @@
+<!-- <h1>hello world</h1>
+
+<button (click)="myEvent('this is click event')">getname me</button>
+<br>
+<br>
+<input type="text" (keydown)="myEvent(box.value)" (blur)="myEvent('Blur event')" #box>
+<br><br>
+<input type="text" (blur)="myEvent('Blur event')">
+
+<div style="background-color: blue;" (mouseover)="myEvent('mouse in')">mouse event</div>
+
+<h1>{{currentVal}}</h1>
+
+{{title}}
+<h1>if condition</h1> -->
+<!-- <h1 *ngIf="show=='yes'; then ifblock else elseblock">
+    if block
+</h1>
+<ng-template #ifblock>
+    <h1>
+        if block
+    </h1>
+</ng-template>
+<ng-template #elseblock>
+    <h1>
+        else block
+    </h1>
+</ng-template> -->
+
+<!-- <ng-template [ngIf]="show=='red'">
+    <h1>red</h1>
+</ng-template>
+<ng-template [ngelse]="show=='green'">
+    <h1>green</h1>
+</ng-template>
+<h1>switch</h1>
+<div [ngSwitch]="color">
+    <h1 *ngSwitchCase="'red'">
+        red
+    </h1>
+    <h1 *ngSwitchCase="'green'">
+        green
+    </h1>
+    <h1 *ngSwitchCase="'yellow'">
+        yellow
+    </h1>
+</div> -->
+<!-- <h1>for loop</h1>
+<h3 *ngFor="let item of data">
+    {{item}}
+</h3> -->
+<!-- <h3>array of an object</h3>
+<h3 *ngFor="let obj of arrOfObj">
+    {{obj.name}}
+    {{obj.age}}
+</h3> -->
+
+<!-- <h1>form</h1>
+<form #simpleForm="ngForm" (ngSubmit)="getUserValue(simpleForm.value)">
+    <input type="text" ngModel name="username" placeholder="Enter name"><br><br>
+    <input type="text" ngModel name="age" placeholder="Enter Age"><br><br>
+    <input type="text" ngModel name="address" placeholder="Enter Address"><br><br>
+    <button>get user values</button>
+</form> -->
+
+<!-- <app-header></app-header>
+<app-footer></app-footer>
+
+<h1>Style Binding</h1>
+
+<h2 [style.color]="'green'"> heading</h2>
+<h2 [style.color]="color"> heading</h2>
+<h2 [style.color]="err?'red':'green'"> conditional style</h2>
+
+
+<button (click)="updateColor()">Update color</button> -->
+<!-- <p>
+    <ngb-alert [dismissible]="false">
+      <strong>Warning!</strong> Better check yourself, you're not looking too good.
+    </ngb-alert>
+  </p>
+  <br><br><br>
+  <p *ngFor="let alert of alerts">
+    <ngb-alert [type]="alert.type" (closed)="close(alert)">{{ alert.message }}</ngb-alert>
+  </p>
+  <p>
+    <button type="button" class="btn btn-primary" (click)="reset()">Reset</button>
+  </p> -->
+  <!-- <h1>material ui</h1>
+  <button Mat-button>Material Ui</button> -->
+
+  <!-- <app-user-list [hero] = "data"></app-user-list> -->
+  <!-- <app-user-list parentcomp = "parentcomp($event)"></app-user-list> -->
+  <!-- video parent to child data transfer video number  = 20  -->
+<!-- <div *ngFor="let item of arrOfObj">
+  <app-users [accessAs] = "item"></app-users>
+</div> -->
+<!-- child to parent data ternsfer video number == 22 -->
+<app-users (parentComponent)='parentComponent($event)'></app-users>
+<br><br><br>
+<h1>{{recivedata}}</h1>
